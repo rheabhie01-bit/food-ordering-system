@@ -32,7 +32,6 @@ class Checkout extends React.Component {
 
     orderStore.create(name, cart);
 
-    // Keep a snapshot so the popup can still show the order after the cart is cleared
     this.setState({ success: { name, total, items: cart } });
     this.props.clearCart();
   };
